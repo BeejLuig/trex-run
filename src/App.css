@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.container {
+  max-width: 500px;
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.saveGame {
+  margin-top: 50px;
+  border-top: 1px solid black;
+}
+
+#distance {
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+#trex {
+  margin: auto;
+  height: 125px;
+  width: 250px;
+  background-image: url("./trex.png");
+  background-position: 0px;
+}
+
+#trex.paused {
+  animation-play-state: paused
+}
+
+button {
+  border: 1px solid gray;
+  background-color: #bbb
+}
+
+button:hover {
+  background-color: #aaa
+}
+
+button:focus {
+  border: 2px solid gray;
+}
+
+input {
+  height: 24px;
+  border-radius: 2px;
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -2000px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -2000px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -2000px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -2000px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -2000px; }
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
